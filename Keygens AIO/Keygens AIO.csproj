@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60A45024-662F-48E0-BC67-7A5AF73C2B18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Keygens_AIO</RootNamespace>
+    <AssemblyName>Keygens AIO</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>unnamed_Qr4_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\Data_Loader_Activator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\Data_Loader_Activator.Designer.cs">
+      <DependentUpon>Data_Loader_Activator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\FileSystem.cs" />
+    <Compile Include="Keygens\File_Viewer_Plus_3x_LicGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\File_Viewer_Plus_3x_LicGen.Designer.cs">
+      <DependentUpon>File_Viewer_Plus_3x_LicGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\FingerPrint.cs" />
+    <Compile Include="Keygens\Goldilogs_1x_LicGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\Goldilogs_1x_LicGen.Designer.cs">
+      <DependentUpon>Goldilogs_1x_LicGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\HostFile.cs" />
+    <Compile Include="Keygens\Jitbit_Macro_Recorder_Keygen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\Jitbit_Macro_Recorder_Keygen.Designer.cs">
+      <DependentUpon>Jitbit_Macro_Recorder_Keygen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\KnowFolderUtils.cs" />
+    <Compile Include="Keygens\LicenseHandler.cs" />
+    <Compile Include="Keygens\LicenseInfo.cs" />
+    <Compile Include="Keygens\LicenseType.cs" />
+    <Compile Include="Keygens\License_Data_Loader.cs" />
+    <Compile Include="Keygens\License.cs" />
+    <Compile Include="Keygens\AntiPlagiarismNET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\AntiPlagiarismNET.Designer.cs">
+      <DependentUpon>AntiPlagiarismNET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\ApacheLogsViewer_5_x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\ApacheLogsViewer_5_x.Designer.cs">
+      <DependentUpon>ApacheLogsViewer_5_x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\Ashisoft_Products_LicGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\Ashisoft_Products_LicGen.Designer.cs">
+      <DependentUpon>Ashisoft_Products_LicGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\BatchPDFProLicenseKeysReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keygens\BatchPDFProLicenseKeysReader.Designer.cs">
+      <DependentUpon>BatchPDFProLicenseKeysReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keygens\License_File_Viewer.cs" />
+    <Compile Include="Keygens\StringCipher.cs" />
+    <Compile Include="Keygens\VersionInfo.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\AntiPlagiarismNET.resx">
+      <DependentUpon>AntiPlagiarismNET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\ApacheLogsViewer_5_x.resx">
+      <DependentUpon>ApacheLogsViewer_5_x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\Ashisoft_Products_LicGen.resx">
+      <DependentUpon>Ashisoft_Products_LicGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\BatchPDFProLicenseKeysReader.resx">
+      <DependentUpon>BatchPDFProLicenseKeysReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\Data_Loader_Activator.resx">
+      <DependentUpon>Data_Loader_Activator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\File_Viewer_Plus_3x_LicGen.resx">
+      <DependentUpon>File_Viewer_Plus_3x_LicGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\Goldilogs_1x_LicGen.resx">
+      <DependentUpon>Goldilogs_1x_LicGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keygens\Jitbit_Macro_Recorder_Keygen.resx">
+      <DependentUpon>Jitbit_Macro_Recorder_Keygen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="unnamed_Qr4_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
